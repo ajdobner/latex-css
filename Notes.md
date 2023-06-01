@@ -9,4 +9,8 @@ The following structure for the `body` of an html page containing latex articles
     * content of the article
 * `footer` for website stuff e.g. saying "Created by blah"
 
-Possibly the `article` tag is unnecessary but it seems semantically relevant. For example: could have multiple articles in a page; or could place a link to a pdf version of the article in `main` and outside the `article` tag.
+Possibly the `article` tag is unnecessary but it seems semantically relevant. For example: could have multiple articles
+in a page; or could place a link to a pdf version of the article in `main` and outside the `article` tag.
+
+## Todo
+* add section numbering? unclear whether numbering should be enforced in css or html

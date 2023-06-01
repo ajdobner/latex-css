@@ -1,36 +1,72 @@
-.ams h2 {
+:root {
+  --amsart-indent-size: 1rem; /* Just guessing here... */
+}
+
+article.amsart {
+  line-height: 1.15;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* By default paragraphs are indented */
+.amsart p {
+  text-indent: var(--amsart-indent-size);
+  margin-top: 0;
+}
+
+/* amsart heading typography */
+/* todo: line-heights?
+
+/* h1 is used for the title */
+.amsart h1 {
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1rem;
+  line-height: 1;
+}
+
+/* h2 is equivalent to section */
+.amsart h2 {
   font-size: 1rem;
   font-variant: small-caps;
   text-align: center;
   font-weight: normal;
+  line-height: 1;
+  margin-top: 2rem;
 }
 
-.ams h3 {
+/* h3 is a subsection, h4 is a subsubsection.
+These are inlined with a small space after */
+.amsart h3, .amsart h4 {
   font-size: 1rem;
-  display: inline;
+  display: inline-block;
+  margin-top: .8rem;
+  margin-bottom: 0;
+  line-height: 1;
 }
 
-.ams h3:after {
+.amsart h3::after, .amsart h4::after {
   content: '.';
-  margin-right: .5ch;
+  margin-right: .4ch;
 }
 
-.ams h3+p {
+.amsart h3+p, .amsart h4+p {
   display: inline;
 }
 
-.ams h4 {
-  font-size: 1rem;
-  display: inline;
+.amsart h4 {
   font-weight: normal;
   font-style: italic;
 }
 
-.ams h4:after {
-  content: '.';
-  margin-right: .5ch;
+/* Copied from original Latex.css style */
+.amsart p.no-indent,
+p.no-indent {
+  text-indent: 0;
 }
 
-.ams h4+p {
-  display: inline;
+.amsart ol p,
+.amsart ul p {
+  text-indent: 0;
 }
