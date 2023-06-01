@@ -1,0 +1,36 @@
+.ams h2 {
+  font-size: 1rem;
+  font-variant: small-caps;
+  text-align: center;
+  font-weight: normal;
+}
+
+.ams h3 {
+  font-size: 1rem;
+  display: inline;
+}
+
+.ams h3:after {
+  content: '.';
+  margin-right: .5ch;
+}
+
+.ams h3+p {
+  display: inline;
+}
+
+.ams h4 {
+  font-size: 1rem;
+  display: inline;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.ams h4:after {
+  content: '.';
+  margin-right: .5ch;
+}
+
+.ams h4+p {
+  display: inline;
+}
